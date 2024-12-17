@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  height: auto;
+  padding: 8px 0;
+  border-bottom: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+section {
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  gap: 4px;
+  
+  h1 {
+    color: var(--primary-color);
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}

@@ -1,0 +1,18 @@
+<main>
+  <section>
+    <h2>{{ title }}</h2>
+    <ng-content></ng-content>
+    <button
+      class="button-primary"
+      (click)="submit()"
+    >
+      {{ primaryBtnText }}
+    </button>
+    <div class="divider">
+      <div></div>
+      <span>ou</span>
+      <div></div>
+    </div>
+    <button class="button-secondary" (click)="navigate()">{{ secondaryBtnText }}</button>
+  </section>
+</main>

@@ -1,0 +1,25 @@
+<app-default-auth-layout
+  title="Faça login na sua conta"
+  primaryBtnText="Entrar"
+  secondaryBtnText="Criar Conta"
+  (submit)="submit()"
+  (navigate)="navigate()"
+>
+  <form [formGroup]="loginForm">
+    <app-primary-input
+      [formName]="'username'"
+      formControlName="username"
+      type="text"
+      label="Usuário"
+      placeholder="Seu nome de usuário"
+    ></app-primary-input>
+
+    <app-primary-input
+      [formName]="'password'"
+      formControlName="password"
+      type="password"
+      label="Senha"
+      placeholder="Digite sua senha"
+    ></app-primary-input>
+  </form>
+</app-default-auth-layout>

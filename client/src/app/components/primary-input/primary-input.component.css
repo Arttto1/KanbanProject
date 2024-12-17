@@ -1,0 +1,27 @@
+.input-wrapper {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50vw;
+  max-width: 300px;
+  margin: 20px 0;
+
+  input {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 6px;
+    background-color: var(--secondary-bg-color);
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    transition-duration: 300ms;
+    color: var(--primary-text-color);
+  }
+  input:focus {
+    border-color: var(--primary-color);
+  }
+}
+

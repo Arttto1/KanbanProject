@@ -1,0 +1,85 @@
+main{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5vw;
+  margin-top: 3vh;
+}
+
+.column-section{
+  display: flex;
+  gap: 1.5vw;
+  margin-right: 1.5vw;
+  flex: 1;
+  
+
+}
+
+.columnDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;  /* Isso garante que a coluna ocupe 100% da largura do seu contêiner pai */
+  flex-grow: 1;  /* Faz com que cada coluna ocupe a mesma largura */
+}
+
+.button-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-grow: 0;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin: auto;
+  } 
+}
+
+.add-project {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition-duration: 300ms;
+  padding: 10px 14px;
+  font-weight: bold;
+
+  &:hover {
+    scale: 110%;
+    border-color: #03ad03;
+  }
+}
+
+.add-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px 6px;
+  cursor: pointer;
+  transition-duration: 300ms;
+
+
+  svg {
+    fill: white;
+    width: 20px;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  &:hover{
+    scale: 110%;
+    border-color: #00a2ff;
+  }
+}
